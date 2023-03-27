@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Cell = () => {
-  return (
-    <div>Cell</div>
-  )
-}
+const Cell = ({ colspan, rowspan, content }) => {
+    return <td colSpan={colspan} rowSpan={rowspan}>{content}</td>;
+};
 
-export default Cell
+export default Cell;
