@@ -76,9 +76,6 @@ module.exports = () => {
         plugins: [
             new HtmlWebpackPlugin(
                 {
-                    title: "Sample",
-                },
-                {
                     title: "React template",
                     template: "./src/index.html",
                 }
