@@ -19,6 +19,7 @@ module.exports = () => {
         mode: currMode,
         entry: "./src/App.jsx",
         devtool: "eval-source-map", //for production, use none
+        query: { presets: ["@babel/preset-env", "@babel/preset-react"] },
         module: {
             rules: [
                 {
@@ -81,8 +82,8 @@ module.exports = () => {
         optimization: {
             minimize: isProductionMode(currMode),
             minimizer: isProductionMode(currMode)
-               ? [new TerserPlugin(), new CssMinimizerPlugin()]
-               : [],
+                ? [new TerserPlugin(), new CssMinimizerPlugin()]
+                : [],
             innerGraph: true,
             usedExports: true,
             splitChunks: {
