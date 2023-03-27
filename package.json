@@ -28,5 +28,8 @@
     "webpack-hot-middleware": "^2.25.3",
     "xml-loader": "^1.2.1",
     "yamljs": "^0.3.0"
+  },
+  "dependencies": {
+    "create-react-app": "^5.0.1"
   }
 }
