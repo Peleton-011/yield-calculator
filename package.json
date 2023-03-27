@@ -30,6 +30,7 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "create-react-app": "^5.0.1"
+    "create-react-app": "^5.0.1",
+    "react-router-dom": "^6.9.0"
   }
 }
