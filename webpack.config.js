@@ -17,11 +17,15 @@ module.exports = () => {
 
     return {
         mode: currMode,
-        entry: "./src/App.jsx",
+        entry: "./src/index.js",
         devtool: "eval-source-map", //for production, use none
-        query: { presets: ["@babel/preset-env", "@babel/preset-react"] },
         module: {
             rules: [
+                {
+                    test: /\.(js|jsx)/,
+                    loader: "babel-loader",
+                    exclude: /node_modules/,
+                },
                 {
                     test: /\.css$/i,
                     use: ["style-loader", "css-loader"],
