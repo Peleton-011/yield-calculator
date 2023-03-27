@@ -74,9 +74,15 @@ module.exports = () => {
             hot: true,
         },
         plugins: [
-            new HtmlWebpackPlugin({
-                title: "Sample",
-            }),
+            new HtmlWebpackPlugin(
+                {
+                    title: "Sample",
+                },
+                {
+                    title: "React template",
+                    template: "./src/index.html",
+                }
+            ),
         ],
         output: {
             filename: "[name].bundle.js",
